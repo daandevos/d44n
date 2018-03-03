@@ -1,0 +1,65 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-shadow($arguments) {
+    -webkit-box-shadow: $arguments;
+    -moz-box-shadow: $arguments;
+    box-shadow: $arguments;
+}
+
+@mixin position($type, $top:null, $right:null, $bottom:null, $left:null) {
+    position: $type;
+    @if (top)    { top:    $top;    }
+    @if (right)  { right:  $right;  }
+    @if (bottom) { bottom: $bottom; }
+    @if (left)   { left:   $left;   }
+}
+
+@mixin transform($arguments) {
+    -webkit-transform: #{$arguments};
+    -moz-transform: #{$arguments};
+    transform: #{$arguments};
+}
+
+@mixin transition($arguments) {
+    -webkit-transition: $arguments;
+    -moz-transition: $arguments;
+    transition: $arguments;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin animation($arguments) {
+    -webkit-animation: #{$arguments};
+    -moz-animation: #{$arguments};
+    -ms-animation: #{$arguments};
+    -o-animation: #{$arguments};
+    animation: #{$arguments};
+}
+
+@mixin background($color, $image, $repeat, $position, $size, $attachment:null) {
+    background-color: $color;
+    background-image: url('/portfolio/assets/images/' + $image);
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;
+    @if (attachment) {
+        background-attachment: $attachment
+    }
+}
