@@ -12939,6 +12939,20 @@ __webpack_require__(5);
 
 
 
+$(document).ready(function () {
+    $('a[href^="#"]').on('click', function (e) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            e.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 800);
+        }
+    });
+
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {

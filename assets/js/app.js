@@ -11,3 +11,17 @@ import fontawesome from '@fortawesome/fontawesome';
 import solid from '@fortawesome/fontawesome-free-solid';
 import regular from '@fortawesome/fontawesome-free-regular';
 import brands from '@fortawesome/fontawesome-free-brands';
+
+$( document ).ready(function() {
+    $('a[href^="#"]').on('click', function(e) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+            e.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 800);
+        }
+    });
+
+    $('[data-toggle="tooltip"]').tooltip();
+});

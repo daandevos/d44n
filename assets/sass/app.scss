@@ -27,6 +27,16 @@ body {
     background-color: $lightest-indigo;
 }
 
+@include keyframes(fadeIn) {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 // Partials
 @import "partials/header";
 @import "partials/heading";

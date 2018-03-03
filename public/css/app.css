@@ -9679,6 +9679,24 @@ body {
   background-color: #886ca2;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -9834,6 +9852,14 @@ h4 {
 
 .card-content .card-body-content .box {
   min-height: 500px;
+}
+
+#contact .bg-light-indigo {
+  border-bottom-left-radius: 4px;
+}
+
+#contact .bg-indigo {
+  border-bottom-right-radius: 4px;
 }
 
 .nav-top {
