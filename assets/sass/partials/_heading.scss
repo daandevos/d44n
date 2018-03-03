@@ -1,0 +1,33 @@
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+h4 {
+    font-size: 17px;
+    opacity: 0.7;
+    margin-bottom: 3px;
+}
+
+.text-darkest {
+    color: $darkest;
+}
+
+.heading-icon {
+    position: absolute;
+    top: 89px;
+    right: 35px;
+    opacity: 0.5;
+}
+
+.fa-history,
+.fa-quote-left,
+.fa-quote-right {
+    opacity: 0.8;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+    font-size: 20px;
+    color: $indigo;
+}

@@ -15,8 +15,21 @@ body {
     color: $text-color;
 }
 
+.bg-indigo {
+    background-color: $indigo;
+}
+
+.bg-light-indigo {
+    background-color: $light-indigo;
+}
+
+.bg-lightest-indigo {
+    background-color: $lightest-indigo;
+}
+
 // Partials
 @import "partials/header";
+@import "partials/heading";
 @import "partials/cards";
 @import "partials/navbar";
 @import "partials/code";

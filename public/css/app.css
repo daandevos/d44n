@@ -9667,6 +9667,18 @@ body {
   color: #4a4a4a;
 }
 
+.bg-indigo {
+  background-color: #33035f;
+}
+
+.bg-light-indigo {
+  background-color: #45196d;
+}
+
+.bg-lightest-indigo {
+  background-color: #886ca2;
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -9750,6 +9762,40 @@ header .shapes {
   header .shapes {
     opacity: 0.1;
   }
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-size: 17px;
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+.text-darkest {
+  color: #222222;
+}
+
+.heading-icon {
+  position: absolute;
+  top: 89px;
+  right: 35px;
+  opacity: 0.5;
+}
+
+.fa-history,
+.fa-quote-left,
+.fa-quote-right {
+  opacity: 0.8;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+  font-size: 20px;
+  color: #33035f;
 }
 
 .card-content {
