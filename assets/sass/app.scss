@@ -2,15 +2,18 @@
 @import "partials/base";
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round|Quicksand|Bad+Script');
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
 html,
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Varela Round", sans-serif;
     padding: 0px;
     margin: 0px;
     color: $text-color;
 }
+
+// Partials
+@import "partials/header";

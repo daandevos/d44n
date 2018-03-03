@@ -55,7 +55,7 @@
 
 @mixin background($color, $image, $repeat, $position, $size, $attachment:null) {
     background-color: $color;
-    background-image: url('/portfolio/assets/images/' + $image);
+    background-image: url('../images/' + $image);
     background-repeat: $repeat;
     background-position: $position;
     background-size: $size;
